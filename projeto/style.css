@@ -1,0 +1,167 @@
+
+@font-face {
+/*
+font-family: 'Aaargh';
+src: url('/webfontkit/Aaargh.eot');
+src: url('/webfontkit/Aaargh.eot?#iefix') format('embedded-opentype');
+src: url('/webfontkit/Aaargh.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;*/
+}
+
+
+*{padding:0;margin:0}
+
+a img {border: none}	
+
+a{text-decoration:none}
+
+body, html{width:100%;font-family: 'Helvetica', 'Arial', sans-serif;font-size:0.9em;color:#444}
+
+.item:hover{cursor:pointer;filter:alpha(opacity=80);-moz-opacity: 0.8;opacity: 0.8}
+
+#geral{width:100%;background:#F2F2F2}
+
+#barra_superior{width:100%;height:80px;background:#000}
+
+#barra_superior .item_de_menu{float:left;height:20px;color:#FFF;font-weight:bold}
+
+#barra_superior .item_de_menu:hover{background:#FFF;color:#444}
+
+#area_slide{width:100%;height:540px;margin:0}
+
+#caixa_busca{position:absolute;top:80px;right:5px;height:100px;}
+
+#conteudo{background:#FFF}
+
+.item_de_lojas{float:left;border:solid 1px #EEE;box-shadow: 10px 10px 5px #888888;}
+
+#promocoes{width:100%;background:#F2F2F2}
+
+#area_slide_promocoes{float:left;margin:0;background-position:center center;background-size:100% 100%;}
+
+#area_promocoes{float:left;margin:0}
+
+.item_promo{float:left;height:96px;background-position:center center;background-size:100% 100%;width:48%;margin:1px 0.5% 0px 0px;border:solid 2px red;}
+
+#eventos{width:100%;background:#F2F2F2}
+
+.item_evento{float:left}
+
+
+#caixa_menu{position:absolute;top:150px;left:5px;min-height:100px;}
+
+#caixa_menu .item_caixa_menu{background:#07A7E1;width:200px;height:20px;margin-top:5px;padding:10px 5px 10px 5px;color:#FFF;font-weight:bold;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;box-shadow: 2px 2px 1px #888888;}
+
+
+
+#rodape{width:100%;min-height:250px;background:#70AF78;border-top:solid 1px #000}
+
+#rodape a{color:#FFF;text-decoration: none;}
+
+#rodape a:hover{color:#FCF40A;text-decoration: none;}
+
+#rodape_mapa, #rodape_links, #rodape_info_contato{float:left;color:#FFF;background:#5D8272}
+
+#copyright{width:100%;min-height:25px;line-height:25px;background:#70AF78;color:#FFF;font-size:12px;}
+
+#copyright a{color:#E5DF2D;text-decoration: none;}
+
+#copyright a:hover{color:#FCF40A;text-decoration: none;}
+
+
+.marcador{margin-right:10px; height:20px}
+
+
+#sobre, #dados{float:left}
+
+
+
+
+@media (max-width: 800px){
+
+#menu_reduzido{display:block}
+#menu_expandido{display:none}
+
+#conteudo{width:98%;margin:8px 1% 0px 1%}
+
+.item_de_lojas{height:120px;width:30.5%;margin:15px 1% 0px 1%}
+.logo_loja{width:80%}
+
+#area_slide_promocoes{width:100%;height:350px;}
+#area_promocoes{width:100%;height:400px}
+
+.item_evento{width:100%}
+
+#rodape_mapa{display:none}
+#rodape_links{width:100%;padding:0px 0px 10px 0px;margin:5px 0px 0px 0px}
+#rodape_info_contato{width:100%;margin:5px 0px 0px 0px}
+#desenvolvedor{display:block}
+
+#caixa_busca{display:none}
+
+#sobre{width:90%;padding:20px}
+#dados{width:100%;padding-left:20px}
+}
+
+
+
+
+
+
+@media (min-width: 801px) AND (max-width: 1250px){
+
+#menu_reduzido{display:none}
+#menu_expandido{display:table-cell}
+#barra_superior .item_de_menu{min-width:70px;margin:5px;padding:20px 5px 20px 5px}
+
+#conteudo{width:90%;margin:8px 5% 0px 5%}
+
+.item_de_lojas{height:120px;width:22.5%;margin:15px 1% 0px 1%}
+.logo_loja{width:70%}
+
+#area_slide_promocoes{width:55%;height:400px;}
+#area_promocoes{width:45%;height:400px}
+
+.item_evento{width:50%}
+
+#rodape_mapa{display:none}
+#rodape_links{width:49.7%;padding:0px 0px 10px 0px;margin:5px 0.3% 0px 0px;min-height:300px}
+#rodape_info_contato{width:50%;padding:0px 0px 10px 0px;margin:5px 0px 0px 0px;min-height:300px}
+#desenvolvedor{display:inline}
+
+#caixa_busca{display:block}
+
+#sobre{width:70%}
+#dados{width:27%;padding-left:20px}
+}
+
+
+
+
+@media (min-width: 1251px){
+
+#menu_reduzido{display:none}
+#menu_expandido{display:table-cell}
+#barra_superior .item_de_menu{min-width:100px;margin:5px;padding:20px 10px 20px 10px}
+
+#conteudo{width:80%;margin:8px 10% 0px 10%}
+
+.item_de_lojas{height:120px;width:22.5%;margin:15px 1% 0px 1%}
+.logo_loja{width:60%}
+
+#area_slide_promocoes{width:60%;height:400px;}
+#area_promocoes{width:40%;height:400px}
+
+.item_evento{width:50%}
+
+#rodape_mapa{display:block;width:32.9%;padding:0px 0px 10px 0px;margin:5px 0.1% 0px 0px;min-height:300px}
+#rodape_links{width:32.9%;padding:0px 0px 10px 0px;margin:5px 0.1% 0px 0px;min-height:300px}
+#rodape_info_contato{width:34%;padding:0px 0px 10px 0px;margin:5px 0px 0px 0px;min-height:300px}
+#desenvolvedor{display:inline}
+
+#caixa_busca{display:block}
+
+#sobre{width:70%}
+#dados{width:27%;padding-left:20px}
+}
